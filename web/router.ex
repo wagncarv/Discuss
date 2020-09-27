@@ -19,6 +19,8 @@ defmodule Discuss.Router do
     get "/", PageController, :index
     # Rotas
     get "/topics/new", TopicController, :new
+    # create
+    post "/topics", TopicController, :create
   end
 
   # Other scopes may use custom stacks.
