@@ -1,1 +1,41 @@
 /* This file is for your main application css. */
+.help-block{
+    color: #DD4132;
+    text-transform: capitalize;
+    position: absolute;
+    top: 35px;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.collection {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-decoration: none;
+}
+  
+.collection-item {
+    border: 1px solid #ddd;
+    padding: 8px;
+    list-style-type:none;
+}
+  
+.collection-even:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+.collection-item:hover {
+    background-color: #ddd;
+}
+  
+.collection-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7159c1;
+    color: white;
+}
