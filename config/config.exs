@@ -27,10 +27,10 @@ config :logger, :console,
 import_config "#{Mix.env}.exs"
 
 config :ueberauth, Ueberauth,
-  providers:[
+  providers: [
     github: { Ueberauth.Strategy.Github, [] }
   ]
 
-config :ueberauth, Ueberauth.Strategy.Github.Oauth,
+config :ueberauth, Ueberauth.Strategy.Github.OAuth,
   client_id: "3643b76082869e3d6dbc",
   client_secret: "a2618b66d8d03ddb75310f452c59c1492e43c505"
