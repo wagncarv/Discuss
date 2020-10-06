@@ -4,7 +4,7 @@ defmodule Discuss.TopicController do
     alias Discuss.Topic
 
     # module plug
-    plug Discuss.Plugs.RequireAuth 
+    plug Discuss.Plugs.RequireAuth
     when action in [:new, :create, :update, :delete]
 
     # function plug
@@ -28,12 +28,12 @@ defmodule Discuss.TopicController do
        |> Topic.changeset(topic)
 
        case Repo.insert(changeset) do
-        {:ok, _topic} -> 
+        {:ok, _topic} ->
             conn
             |> put_flash(:info, "New topic created!")
             |> redirect(to: topic_path(conn, :index))
-        
-        {:error, changeset} -> 
+
+        {:error, changeset} ->
             render conn, "new.html", changeset: changeset
        end
     end

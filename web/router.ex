@@ -27,7 +27,7 @@ defmodule Discuss.Router do
     # get "/topics/:id/edit", TopicController, :edit
     # Update
     # put "/topics/:id", TopicController, :update
-    # 
+    #
 
     resources "/", TopicController
   end
