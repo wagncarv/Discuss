@@ -1,12 +1,9 @@
 defmodule Discuss.Topic do
     use Ecto.Schema
-    # import Ecto
-    # import Ecto.{Changeset, Query}
     import Ecto.Changeset
-    alias Ecto.Changeset
 
     @required_fields [:title]
-
+    @derive {Jason.Encoder, only: [:id, :title]}
     schema "topics" do
         field :title, :string
         timestamps()
