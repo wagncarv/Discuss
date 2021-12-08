@@ -1,0 +1,28 @@
+POST http://localhost:4000/topics/new
+content-type: application/json
+
+{
+    "title": "sample"
+}
+
+###
+
+GET http://localhost:4000/topics/new
+content-type: application/json
+
+{
+    "title": "sample"
+}
+
+###
+DELETE http://localhost:4000/topics/1
+content-type: application/json
+
+###
+PUT http://localhost:4000/topics
+content-type: application/json
+
+{
+    "title": "other sample",
+
+}
